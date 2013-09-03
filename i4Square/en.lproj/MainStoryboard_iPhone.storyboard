@@ -1,26 +1,179 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LHx-dc-Neo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="5">
+        <!--Navigation Controller-->
+        <scene sceneID="0P6-XA-RQn">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="LHx-dc-Neo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3HP-92-EWX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ly4-ff-H0E" kind="relationship" relationship="rootViewController" id="GLS-sT-pv5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXS-et-cwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="112" y="128"/>
+        </scene>
+        <!--Foursquare Login View Controller - Login-->
+        <scene sceneID="ccq-E2-ZoE">
+            <objects>
+                <viewController id="ly4-ff-H0E" customClass="FoursquareLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rpa-vP-gsu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86A-7H-Tmm">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="86A-7H-Tmm" firstAttribute="bottom" secondItem="rpa-vP-gsu" secondAttribute="bottom" type="default" id="4Fx-sp-gHw"/>
+                            <constraint firstItem="86A-7H-Tmm" firstAttribute="leading" secondItem="rpa-vP-gsu" secondAttribute="leading" type="default" id="FuB-TT-OI8"/>
+                            <constraint firstItem="86A-7H-Tmm" firstAttribute="trailing" secondItem="rpa-vP-gsu" secondAttribute="trailing" type="default" id="ofv-c3-zSa"/>
+                            <constraint firstItem="86A-7H-Tmm" firstAttribute="top" secondItem="rpa-vP-gsu" secondAttribute="top" type="default" id="xDK-ID-0y1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="ccP-Q5-0CQ"/>
+                    <connections>
+                        <outlet property="webView" destination="86A-7H-Tmm" id="IYn-ZZ-Ztu"/>
+                        <segue destination="7wR-zL-IMl" kind="push" identifier="logInSegue" id="yHE-Uo-amR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJt-Bo-6VW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="130"/>
+        </scene>
+        <!--Profile View Controller - Profile-->
+        <scene sceneID="xcB-Vg-czg">
+            <objects>
+                <viewController id="7wR-zL-IMl" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j72-AX-ttz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzS-yh-NEw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="8Pq-pg-SVH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzE-UE-fcp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="K9T-iA-bf2"/>
+                                    <constraint firstAttribute="height" constant="100" id="SyW-wX-Uno"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CheckIns:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggC-Pp-RAo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="k64-Mh-waX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Badges:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LP6-rc-7fS">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="WBd-P7-klh"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your last check-in:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocy-ag-rN1">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nc5-cz-MUq">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="Pe2-zI-kNJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ocy-ag-rN1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="31b-PU-5Zd"/>
+                            <constraint firstItem="LP6-rc-7fS" firstAttribute="top" secondItem="ggC-Pp-RAo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8Rg-lJ-BOQ"/>
+                            <constraint firstAttribute="trailing" secondItem="nc5-cz-MUq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9KW-77-hp0"/>
+                            <constraint firstItem="ggC-Pp-RAo" firstAttribute="leading" secondItem="LP6-rc-7fS" secondAttribute="leading" type="default" id="B9T-zj-qp6"/>
+                            <constraint firstItem="hzE-UE-fcp" firstAttribute="top" secondItem="tzS-yh-NEw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="C5Q-cV-lAY"/>
+                            <constraint firstAttribute="trailing" secondItem="tzS-yh-NEw" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="D3R-6p-cub"/>
+                            <constraint firstItem="nc5-cz-MUq" firstAttribute="leading" secondItem="j72-AX-ttz" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="FXt-CR-Ayk"/>
+                            <constraint firstAttribute="trailing" secondItem="LP6-rc-7fS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="KYG-co-lam"/>
+                            <constraint firstItem="tzS-yh-NEw" firstAttribute="top" secondItem="j72-AX-ttz" secondAttribute="top" constant="20" symbolic="YES" type="user" id="Kml-gw-4uq"/>
+                            <constraint firstAttribute="centerX" secondItem="WBd-P7-klh" secondAttribute="centerX" type="user" id="LLT-zc-Vkj"/>
+                            <constraint firstItem="tzS-yh-NEw" firstAttribute="leading" secondItem="j72-AX-ttz" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="bce-7h-qhP"/>
+                            <constraint firstAttribute="trailing" secondItem="ggC-Pp-RAo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="d8C-hi-9uA"/>
+                            <constraint firstItem="nc5-cz-MUq" firstAttribute="top" secondItem="Ocy-ag-rN1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="g1g-yr-VKK"/>
+                            <constraint firstItem="Ocy-ag-rN1" firstAttribute="leading" secondItem="j72-AX-ttz" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ifZ-rl-Ln9"/>
+                            <constraint firstItem="ggC-Pp-RAo" firstAttribute="top" secondItem="j72-AX-ttz" secondAttribute="top" constant="75" id="nj1-ge-pRS"/>
+                            <constraint firstItem="hzE-UE-fcp" firstAttribute="leading" secondItem="j72-AX-ttz" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rXS-QJ-fc3"/>
+                            <constraint firstAttribute="centerY" secondItem="WBd-P7-klh" secondAttribute="centerY" type="user" id="taR-cO-8yl"/>
+                            <constraint firstItem="Ocy-ag-rN1" firstAttribute="top" secondItem="hzE-UE-fcp" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ykt-ZD-bXf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="GEX-Uu-O2F"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="WBd-P7-klh" id="xht-u2-G2q"/>
+                        <outlet property="badgesLabel" destination="LP6-rc-7fS" id="cMV-tk-T7V"/>
+                        <outlet property="checkInLabel" destination="ggC-Pp-RAo" id="2Ov-7Y-M60"/>
+                        <outlet property="lastCheckInLabel" destination="Ocy-ag-rN1" id="aey-oH-Mac"/>
+                        <outlet property="lastCheckInTextView" destination="nc5-cz-MUq" id="XSH-Eg-rjp"/>
+                        <outlet property="nameLabel" destination="tzS-yh-NEw" id="b1D-6G-bgd"/>
+                        <outlet property="profileImage" destination="hzE-UE-fcp" id="HPM-W3-OlS"/>
+                        <segue destination="ly4-ff-H0E" kind="push" identifier="backToLogin" id="jHW-jY-9sK"/>
+                        <segue destination="acv-4u-hch" kind="push" identifier="toMapView" id="Xo9-H5-cQf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfe-4N-xcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="132"/>
+        </scene>
+        <!--Map View Controller - Map-->
+        <scene sceneID="d7Q-v6-fQG">
+            <objects>
+                <viewController id="acv-4u-hch" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MGR-8H-fen">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J3O-gC-dQL">
+                                <connections>
+                                    <outlet property="delegate" destination="acv-4u-hch" id="3ZO-BT-1ZM"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J3O-gC-dQL" firstAttribute="top" secondItem="MGR-8H-fen" secondAttribute="top" type="default" id="8hv-s4-aQV"/>
+                            <constraint firstItem="J3O-gC-dQL" firstAttribute="trailing" secondItem="MGR-8H-fen" secondAttribute="trailing" type="default" id="KJM-O1-OQ0"/>
+                            <constraint firstItem="J3O-gC-dQL" firstAttribute="bottom" secondItem="MGR-8H-fen" secondAttribute="bottom" type="default" id="NJZ-y1-jvS"/>
+                            <constraint firstItem="J3O-gC-dQL" firstAttribute="leading" secondItem="MGR-8H-fen" secondAttribute="leading" type="default" id="icV-I2-W4R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="v3t-Ju-9eA"/>
+                    <connections>
+                        <outlet property="mapView" destination="J3O-gC-dQL" id="1CU-gV-Ds2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNE-bI-M5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="132"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="jHW-jY-9sK"/>
+    </inferredMetricsTieBreakers>
 </document>

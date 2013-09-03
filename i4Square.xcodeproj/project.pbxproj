@@ -18,10 +18,23 @@
 		551E200417A11E7400517C99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 551E200317A11E7400517C99 /* Default-568h@2x.png */; };
 		551E200717A11E7400517C99 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551E200517A11E7400517C99 /* MainStoryboard_iPhone.storyboard */; };
 		551E200A17A11E7400517C99 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551E200817A11E7400517C99 /* MainStoryboard_iPad.storyboard */; };
-		551E200D17A11E7400517C99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E200C17A11E7400517C99 /* ViewController.m */; };
+		551E204B17A1326200517C99 /* FoursquareLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E204A17A1326200517C99 /* FoursquareLoginViewController.m */; };
+		551E205517A13E5000517C99 /* ProfileWebServiceWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E205417A13E5000517C99 /* ProfileWebServiceWorker.m */; };
+		551E205817A13E6500517C99 /* ProfileWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E205717A13E6500517C99 /* ProfileWebService.m */; };
+		551E205C17A13E9F00517C99 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 551E205A17A13E9F00517C99 /* Icon.png */; };
+		551E205D17A13E9F00517C99 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 551E205B17A13E9F00517C99 /* Icon@2x.png */; };
+		551E206017A140C300517C99 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E205F17A140C300517C99 /* ProfileViewController.m */; };
+		551E206417A174B600517C99 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E206317A174B600517C99 /* MapViewController.m */; };
+		551E206617A1764D00517C99 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E206517A1764D00517C99 /* MapKit.framework */; };
+		551E206B17A17A1900517C99 /* VenuesWebServiceWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E206A17A17A1900517C99 /* VenuesWebServiceWorker.m */; };
+		551E206E17A17A2C00517C99 /* VenuesWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E206D17A17A2C00517C99 /* VenuesWebService.m */; };
+		551E207117A181DA00517C99 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E207017A181D900517C99 /* MapAnnotation.m */; };
+		5544E22B17A276C6002C28DB /* CheckInWebServiceWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544E22A17A276C6002C28DB /* CheckInWebServiceWorker.m */; };
+		5544E22E17A276D5002C28DB /* CheckInWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544E22D17A276D5002C28DB /* CheckInWebService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550B29EF17A66A5A007FEBBF /* ProfileViewControllerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewControllerConstants.h; sourceTree = "<group>"; };
 		551E1FEA17A11E7400517C99 /* i4Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = i4Square.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551E1FED17A11E7400517C99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		551E1FEF17A11E7400517C99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,8 +50,34 @@
 		551E200317A11E7400517C99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		551E200617A11E7400517C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		551E200917A11E7400517C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		551E200B17A11E7400517C99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		551E200C17A11E7400517C99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		551E201317A1204A00517C99 /* FoursquareLoginViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareLoginViewConstants.h; sourceTree = "<group>"; };
+		551E204917A1326200517C99 /* FoursquareLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareLoginViewController.h; sourceTree = "<group>"; };
+		551E204A17A1326200517C99 /* FoursquareLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareLoginViewController.m; sourceTree = "<group>"; usesTabs = 0; };
+		551E205317A13E5000517C99 /* ProfileWebServiceWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileWebServiceWorker.h; sourceTree = "<group>"; };
+		551E205417A13E5000517C99 /* ProfileWebServiceWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileWebServiceWorker.m; sourceTree = "<group>"; };
+		551E205617A13E6500517C99 /* ProfileWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileWebService.h; sourceTree = "<group>"; };
+		551E205717A13E6500517C99 /* ProfileWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileWebService.m; sourceTree = "<group>"; };
+		551E205917A13E7A00517C99 /* ProfileWebServiceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileWebServiceConstants.h; sourceTree = "<group>"; };
+		551E205A17A13E9F00517C99 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		551E205B17A13E9F00517C99 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		551E205E17A140C300517C99 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		551E205F17A140C300517C99 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		551E206217A174B500517C99 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		551E206317A174B600517C99 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		551E206517A1764D00517C99 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		551E206817A179C500517C99 /* VenuesWebServiceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesWebServiceConstants.h; sourceTree = "<group>"; };
+		551E206917A17A1900517C99 /* VenuesWebServiceWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesWebServiceWorker.h; sourceTree = "<group>"; };
+		551E206A17A17A1900517C99 /* VenuesWebServiceWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesWebServiceWorker.m; sourceTree = "<group>"; };
+		551E206C17A17A2C00517C99 /* VenuesWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesWebService.h; sourceTree = "<group>"; };
+		551E206D17A17A2C00517C99 /* VenuesWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesWebService.m; sourceTree = "<group>"; };
+		551E206F17A181D800517C99 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		551E207017A181D900517C99 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		551E20A417A18CEB00517C99 /* MapViewControllerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewControllerConstants.h; sourceTree = "<group>"; };
+		5544E22717A275CC002C28DB /* CheckInWebServiceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInWebServiceConstants.h; sourceTree = "<group>"; };
+		5544E22917A276C6002C28DB /* CheckInWebServiceWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInWebServiceWorker.h; sourceTree = "<group>"; };
+		5544E22A17A276C6002C28DB /* CheckInWebServiceWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInWebServiceWorker.m; sourceTree = "<group>"; };
+		5544E22C17A276D5002C28DB /* CheckInWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInWebService.h; sourceTree = "<group>"; };
+		5544E22D17A276D5002C28DB /* CheckInWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInWebService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551E206617A1764D00517C99 /* MapKit.framework in Frameworks */,
 				551E1FEE17A11E7400517C99 /* UIKit.framework in Frameworks */,
 				551E1FF017A11E7400517C99 /* Foundation.framework in Frameworks */,
 				551E1FF217A11E7400517C99 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +115,7 @@
 		551E1FEC17A11E7400517C99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				551E206517A1764D00517C99 /* MapKit.framework */,
 				551E1FED17A11E7400517C99 /* UIKit.framework */,
 				551E1FEF17A11E7400517C99 /* Foundation.framework */,
 				551E1FF117A11E7400517C99 /* CoreGraphics.framework */,
@@ -85,12 +126,25 @@
 		551E1FF317A11E7400517C99 /* i4Square */ = {
 			isa = PBXGroup;
 			children = (
+				551E205A17A13E9F00517C99 /* Icon.png */,
+				551E205B17A13E9F00517C99 /* Icon@2x.png */,
 				551E1FFC17A11E7400517C99 /* AppDelegate.h */,
 				551E1FFD17A11E7400517C99 /* AppDelegate.m */,
 				551E200517A11E7400517C99 /* MainStoryboard_iPhone.storyboard */,
 				551E200817A11E7400517C99 /* MainStoryboard_iPad.storyboard */,
-				551E200B17A11E7400517C99 /* ViewController.h */,
-				551E200C17A11E7400517C99 /* ViewController.m */,
+				551E201317A1204A00517C99 /* FoursquareLoginViewConstants.h */,
+				551E204917A1326200517C99 /* FoursquareLoginViewController.h */,
+				551E204A17A1326200517C99 /* FoursquareLoginViewController.m */,
+				550B29EF17A66A5A007FEBBF /* ProfileViewControllerConstants.h */,
+				551E205E17A140C300517C99 /* ProfileViewController.h */,
+				551E205F17A140C300517C99 /* ProfileViewController.m */,
+				551E20A417A18CEB00517C99 /* MapViewControllerConstants.h */,
+				551E206217A174B500517C99 /* MapViewController.h */,
+				551E206317A174B600517C99 /* MapViewController.m */,
+				5544E22817A2769F002C28DB /* CheckInWebService */,
+				551E206717A1799A00517C99 /* VenuesWebService */,
+				551E206117A1747800517C99 /* ProfileWebService */,
+				5544E22617A274F9002C28DB /* Map Annotation */,
 				551E1FF417A11E7400517C99 /* Supporting Files */,
 			);
 			path = i4Square;
@@ -108,6 +162,51 @@
 				551E200317A11E7400517C99 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		551E206117A1747800517C99 /* ProfileWebService */ = {
+			isa = PBXGroup;
+			children = (
+				551E205917A13E7A00517C99 /* ProfileWebServiceConstants.h */,
+				551E205617A13E6500517C99 /* ProfileWebService.h */,
+				551E205717A13E6500517C99 /* ProfileWebService.m */,
+				551E205317A13E5000517C99 /* ProfileWebServiceWorker.h */,
+				551E205417A13E5000517C99 /* ProfileWebServiceWorker.m */,
+			);
+			name = ProfileWebService;
+			sourceTree = "<group>";
+		};
+		551E206717A1799A00517C99 /* VenuesWebService */ = {
+			isa = PBXGroup;
+			children = (
+				551E206817A179C500517C99 /* VenuesWebServiceConstants.h */,
+				551E206C17A17A2C00517C99 /* VenuesWebService.h */,
+				551E206D17A17A2C00517C99 /* VenuesWebService.m */,
+				551E206917A17A1900517C99 /* VenuesWebServiceWorker.h */,
+				551E206A17A17A1900517C99 /* VenuesWebServiceWorker.m */,
+			);
+			name = VenuesWebService;
+			sourceTree = "<group>";
+		};
+		5544E22617A274F9002C28DB /* Map Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				551E206F17A181D800517C99 /* MapAnnotation.h */,
+				551E207017A181D900517C99 /* MapAnnotation.m */,
+			);
+			name = "Map Annotation";
+			sourceTree = "<group>";
+		};
+		5544E22817A2769F002C28DB /* CheckInWebService */ = {
+			isa = PBXGroup;
+			children = (
+				5544E22717A275CC002C28DB /* CheckInWebServiceConstants.h */,
+				5544E22C17A276D5002C28DB /* CheckInWebService.h */,
+				5544E22D17A276D5002C28DB /* CheckInWebService.m */,
+				5544E22917A276C6002C28DB /* CheckInWebServiceWorker.h */,
+				5544E22A17A276C6002C28DB /* CheckInWebServiceWorker.m */,
+			);
+			name = CheckInWebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +266,8 @@
 				551E200417A11E7400517C99 /* Default-568h@2x.png in Resources */,
 				551E200717A11E7400517C99 /* MainStoryboard_iPhone.storyboard in Resources */,
 				551E200A17A11E7400517C99 /* MainStoryboard_iPad.storyboard in Resources */,
+				551E205C17A13E9F00517C99 /* Icon.png in Resources */,
+				551E205D17A13E9F00517C99 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +280,16 @@
 			files = (
 				551E1FFA17A11E7400517C99 /* main.m in Sources */,
 				551E1FFE17A11E7400517C99 /* AppDelegate.m in Sources */,
-				551E200D17A11E7400517C99 /* ViewController.m in Sources */,
+				551E204B17A1326200517C99 /* FoursquareLoginViewController.m in Sources */,
+				551E205517A13E5000517C99 /* ProfileWebServiceWorker.m in Sources */,
+				551E205817A13E6500517C99 /* ProfileWebService.m in Sources */,
+				551E206017A140C300517C99 /* ProfileViewController.m in Sources */,
+				551E206417A174B600517C99 /* MapViewController.m in Sources */,
+				551E206B17A17A1900517C99 /* VenuesWebServiceWorker.m in Sources */,
+				551E206E17A17A2C00517C99 /* VenuesWebService.m in Sources */,
+				551E207117A181DA00517C99 /* MapAnnotation.m in Sources */,
+				5544E22B17A276C6002C28DB /* CheckInWebServiceWorker.m in Sources */,
+				5544E22E17A276D5002C28DB /* CheckInWebService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +422,7 @@
 				551E201217A11E7400517C99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
